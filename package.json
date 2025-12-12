@@ -1,0 +1,44 @@
+{
+  "name": "pakasir-sdk",
+  "description": "Pakasir SDK - Lightweight Pakasir Payment Gateway API Client Library",
+  "version": "1.0.3",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "author": "zaadevofc",
+  "repository": {
+    "url": "git+https://github.com/zeative/pakasir-sdk.git"
+  },
+  "scripts": {
+    "test": "bun run examples/test.ts",
+    "build": "tsup",
+    "r:patch": "npm run build && npm version patch && npm publish",
+    "r:minor": "npm run build && npm version minor && npm publish",
+    "r:major": "npm run build && npm version major && npm publish"
+  },
+  "keywords": [
+    "pakasir",
+    "payment-gateway",
+    "library",
+    "sdk"
+  ],
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {},
+  "packageManager": "pnpm@10.24.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

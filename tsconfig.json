@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler",
+
+    "typeRoots": ["node_modules/@types"]
+  },
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts", "node_modules/@types/lowdb"]
+}
