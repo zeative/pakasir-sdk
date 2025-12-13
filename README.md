@@ -153,12 +153,11 @@ Monitor payment status changes in real-time with polling.
 pakasir.watchPayment('ORDER-12345', 100_000, {
   interval: 3000,
   timeout: 600000,
+
   onStatusChange: (payment) => {
-    console.log('Status:', payment.status);
-    if (payment.status === 'completed') {
-      pakasir.stopWatch('ORDER-12345', 100_000);
-    }
+    console.log('Status:', payment);
   },
+
   onError: (error) => console.error(error),
 });
 ```
