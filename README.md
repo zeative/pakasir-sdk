@@ -1,17 +1,17 @@
 # Pakasir Payment Gateway
 
-<img src="media/pakasir-gap.png" width="170" alt="Pakasir Logo" align="right"/>
+<img src="media/pakasir-gap.png" width="200" alt="Pakasir Logo" align="right"/>
 
 SDK TypeScript ringan untuk integrasi pembayaran digital Indonesia [pakasir.com](https://pakasir.com).
 Dukung QRIS, Virtual Account multi-bank & PayPal dalam hitungan menit.
 
-<a href="https://www.npmjs.com/package/zaflow"><img src="https://img.shields.io/npm/v/zaflow.svg" alt="NPM Version"></a>
-<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/github/languages/code-size/zeative/zaflow" alt="GitHub Code Size"></a>
-<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/badge/TypeScript-5.0%2B-blue?style=flat-square&logo=typescript" alt="TypeScript"></a>
-<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/github/license/zeative/zaflow" alt="GitHub License"></a>
-<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/github/stars/zeative/zaflow" alt="GitHub Stars"></a>
-<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/github/forks/zeative/zaflow" alt="GitHub Forks"></a>
-<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/github/watchers/zeative/zaflow" alt="GitHub Watchers"></a>
+<a href="https://www.npmjs.com/package/pakasir-sdk"><img src="https://img.shields.io/npm/v/pakasir-sdk.svg" alt="NPM Version"></a>
+<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/languages/code-size/zeative/pakasir-sdk" alt="GitHub Code Size"></a>
+<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/badge/TypeScript-5.0%2B-blue?style=flat-square&logo=typescript" alt="TypeScript"></a>
+<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/license/zeative/pakasir-sdk" alt="GitHub License"></a>
+<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/stars/zeative/pakasir-sdk" alt="GitHub Stars"></a>
+<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/forks/zeative/pakasir-sdk" alt="GitHub Forks"></a>
+<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/watchers/zeative/pakasir-sdk" alt="GitHub Watchers"></a>
 
 [Installation](#-installation) •
 [Quick Start](#-quick-start) •
@@ -51,7 +51,7 @@ Contributions are welcome! Please follow these steps:
 
 ## 🎯 Issues & Feedback
 
-**If you encounter any problems or have feature requests, please open an [issue](https://github.com/zeative/zaflow/issues)**
+**If you encounter any problems or have feature requests, please open an [issue](https://github.com/zeative/pakasir-sdk/issues)**
 
 - [Buy me coffee ☕](https://saweria.co/zaadevofc)
 - [Ko-Fi](https://ko-fi.com/zaadevofc)
@@ -60,4 +60,4 @@ Contributions are welcome! Please follow these steps:
 
 ## 📜 License
 
-Distributed under the **MIT License**. See [`LICENSE`](https://github.com/zeative/zaflow/blob/main/LICENSE) for details.
+Distributed under the **MIT License**. See [`LICENSE`](https://github.com/zeative/pakasir-sdk/blob/main/LICENSE) for details.
