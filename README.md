@@ -9,13 +9,10 @@ Dukung QRIS, Virtual Account multi-bank & PayPal dalam hitungan menit.
 <a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/languages/code-size/zeative/pakasir-sdk" alt="GitHub Code Size"></a>
 <a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/badge/TypeScript-5.0%2B-blue?style=flat-square&logo=typescript" alt="TypeScript"></a>
 <a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/license/zeative/pakasir-sdk" alt="GitHub License"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/stars/zeative/pakasir-sdk" alt="GitHub Stars"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/forks/zeative/pakasir-sdk" alt="GitHub Forks"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/watchers/zeative/pakasir-sdk" alt="GitHub Watchers"></a>
-
-[Installation](#-installation) · [Quick Start](#-quick-start) · [Configuration](#️-configuration) · [Payment Methods](#-payment-methods) · [API Reference](#-api-reference)
 
 <br />
+
+[Installation](#-installation) · [Quick Start](#-quick-start) · [Configuration](#️-configuration) · [Payment Methods](#-payment-methods) · [API Reference](#-api-reference)
 
 ## 📦 Installation
 
