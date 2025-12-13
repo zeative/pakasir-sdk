@@ -13,8 +13,6 @@ Dukung QRIS, Virtual Account multi-bank & PayPal dalam hitungan menit.
 <a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/forks/zeative/pakasir-sdk" alt="GitHub Forks"></a>
 <a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/watchers/zeative/pakasir-sdk" alt="GitHub Watchers"></a>
 
-<br />
-
 [Installation](#-installation) · [Quick Start](#-quick-start) · [Configuration](#️-configuration) · [Payment Methods](#-payment-methods) · [API Reference](#-api-reference)
 
 <br />
