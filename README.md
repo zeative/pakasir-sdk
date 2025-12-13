@@ -1,8 +1,6 @@
-<table>
-<tr>
-<td>
-
 # Pakasir Payment Gateway
+
+<img src="media/pakasir-gap.png" width="170" alt="Pakasir Logo" align="right"/>
 
 SDK TypeScript ringan untuk integrasi pembayaran digital Indonesia [pakasir.com](https://pakasir.com).
 Dukung QRIS, Virtual Account multi-bank & PayPal dalam hitungan menit.
@@ -19,13 +17,6 @@ Dukung QRIS, Virtual Account multi-bank & PayPal dalam hitungan menit.
 [Quick Start](#-quick-start) •
 [Payment Methods](#-payment-methods) •
 [API Reference](#-api-reference)
-
-</td>
-<td>
-<img src="media/pakasir-clear.png" width="200" alt="Pakasir Logo"/>
-</td>
-</tr>
-</table>
 
 ---
 
