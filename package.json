@@ -36,9 +36,6 @@
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
-  "dependencies": {
-    "got": "^14.6.5"
-  },
   "packageManager": "pnpm@10.24.0",
   "engines": {
     "node": ">=20.0.0"
