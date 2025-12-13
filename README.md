@@ -18,9 +18,49 @@ Dukung QRIS, Virtual Account multi-bank & PayPal dalam hitungan menit.
 [Payment Methods](#-payment-methods) •
 [API Reference](#-api-reference)
 
----
+<br />
 
-## 💳 Payment Methods
+## 📦 Installation
+
+Install `pakasir-sdk` using your preferred package manager:
+
+```bash
+npm install pakasir-sdk
+# or
+pnpm add pakasir-sdk
+# or
+bun add zaflow
+```
+
+## ⚡ Quick Start
+
+Here is a minimal example to create a payment:
+
+```typescript
+import { Pakasir } from 'pakasir-sdk';
+
+const pakasir = new Pakasir({
+  slug: 'your-slug',
+  apikey: 'your-api-key',
+});
+
+const result = await pakasir.createPayment('qris', 'your-order-id', 10000);
+
+console.log(result);
+```
+
+## 🛠️ Configuration
+
+The `Pakasir` constructor accepts a configuration object:
+
+| Option   | Type     | Description                                                 |
+| :------- | :------- | :---------------------------------------------------------- |
+| `slug`   | `string` | Required. [Project](https://app.pakasir.com/projects) slug. |
+| `apikey` | `string` | Required. [API key](https://app.pakasir.com/projects).      |
+
+## 💰 Payment Methods
+
+For more information about payment methods, please visit [Pakasir Biaya](https://pakasir.com/p/pricing).
 
 | Method         | Code             | Fee              |
 | -------------- | ---------------- | ---------------- |
