@@ -13,10 +13,7 @@ Dukung QRIS, Virtual Account multi-bank & PayPal dalam hitungan menit.
 <a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/forks/zeative/pakasir-sdk" alt="GitHub Forks"></a>
 <a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/watchers/zeative/pakasir-sdk" alt="GitHub Watchers"></a>
 
-[Installation](#-installation) •
-[Quick Start](#-quick-start) •
-[Payment Methods](#-payment-methods) •
-[API Reference](#-api-reference)
+[Installation](#-installation) · [Quick Start](#-quick-start) · [Configuration](#️-configuration) · [Payment Methods](#-payment-methods) · [API Reference](#-api-reference)
 
 <br />
 
@@ -76,6 +73,135 @@ For more information about payment methods, please visit [Pakasir Biaya](https:/
 | ATM Bersama VA | `atm_bersama_va` | Rp3.500          |
 | Sampoerna VA   | `sampoerna_va`   | Rp2.000          |
 | Artha Graha VA | `artha_graha_va` | Rp2.000          |
+
+## 📖 API Reference
+
+> **Quick Jump:** [Create Payment](#create-payment) · [Get Payment URL](#get-payment-url) · [Detail Payment](#detail-payment) · [Cancel Payment](#cancel-payment) · [Simulation Payment](#simulation-payment) · [Watch Payment](#watch-payment) · [Stop Watch](#stop-watch)
+
+### Create Payment
+
+Create a new payment transaction via API.
+
+```typescript
+const payment = await pakasir.createPayment('qris', 'ORDER-12345', 100_000, 'https://example.com/success');
+
+console.log(payment);
+```
+
+| Parameter      | Type            | Description                                              |
+| :------------- | :-------------- | :------------------------------------------------------- |
+| `method`       | `PaymentMethod` | Payment method code [Payment Methods](#-payment-methods) |
+| `order_id`     | `string`        | Unique order ID (min 5 characters)                       |
+| `amount`       | `number`        | Amount in Rupiah (min Rp500)                             |
+| `redirect_url` | `string?`       | Optional redirect URL after payment                      |
+
+---
+
+### Get Payment URL
+
+Generate payment URL without API call. Useful for client-side redirects.
+
+```typescript
+const payment = pakasir.getPaymentUrl('qris', 'ORDER-12345', 100_000);
+
+console.log(payment);
+```
+
+---
+
+### Detail Payment
+
+Retrieve current status of a payment.
+
+```typescript
+const detail = await pakasir.detailPayment('ORDER-12345', 100_000);
+
+console.log(detail);
+```
+
+---
+
+### Cancel Payment
+
+Cancel an existing pending payment.
+
+```typescript
+const canceled = await pakasir.cancelPayment('ORDER-12345', 100_000);
+
+console.log(canceled);
+```
+
+---
+
+### Simulation Payment
+
+Simulate a successful payment for testing purposes.
+
+```typescript
+const simulated = await pakasir.simulationPayment('ORDER-12345', 100_000);
+
+console.log(simulated);
+```
+
+---
+
+### Watch Payment
+
+Monitor payment status changes in real-time with polling.
+
+```typescript
+pakasir.watchPayment('ORDER-12345', 100_000, {
+  interval: 3000,
+  timeout: 600000,
+  onStatusChange: (payment) => {
+    console.log('Status:', payment.status);
+    if (payment.status === 'completed') {
+      pakasir.stopWatch('ORDER-12345', 100_000);
+    }
+  },
+  onError: (error) => console.error(error),
+});
+```
+
+| Option           | Type                                | Default  | Description                      |
+| :--------------- | :---------------------------------- | :------- | :------------------------------- |
+| `interval`       | `number`                            | `3000`   | Polling interval in milliseconds |
+| `timeout`        | `number`                            | `600000` | Auto-stop timeout (10 minutes)   |
+| `onStatusChange` | `(payment: PaymentPayload) => void` | -        | Callback on status change        |
+| `onError`        | `(error: Error) => void`            | -        | Callback on error                |
+
+---
+
+### Stop Watch
+
+Manually stop watching a payment.
+
+```typescript
+pakasir.stopWatch('ORDER-12345', 100_000);
+```
+
+---
+
+### PaymentPayload Type
+
+Response type returned by all payment methods:
+
+```typescript
+type PaymentPayload = {
+  project: string;
+  order_id: string;
+  amount: number;
+  fee: number;
+  status: 'pending' | 'canceled' | 'completed';
+  total_payment: number;
+  payment_method: string;
+  payment_number: string | null;
+  payment_url: string | null;
+  redirect_url: string | null;
+  expired_at: string | Date | null;
+  completed_at: string | Date | null;
+};
+```
 
 ---
 
