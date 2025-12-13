@@ -17,6 +17,7 @@
   "repository": {
     "url": "git+https://github.com/zeative/pakasir-sdk.git"
   },
+  "homepage": "https://pakasir.com/p/docs",
   "scripts": {
     "test": "bun run examples/test.ts",
     "build": "tsup",

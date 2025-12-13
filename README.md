@@ -26,7 +26,7 @@ npm install pakasir-sdk
 # or
 pnpm add pakasir-sdk
 # or
-bun add zaflow
+bun add pakasir-sdk
 ```
 
 ## ⚡ Quick Start
