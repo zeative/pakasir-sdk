@@ -1,7 +1,7 @@
 {
   "name": "pakasir-sdk",
   "description": "Pakasir SDK - Lightweight Pakasir Payment Gateway API Client Library",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
