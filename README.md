@@ -1,42 +1,50 @@
-<div align="center">
-  <img alt="Pakasir SDK - Lightweight Pakasir Payment Gateway API Client Library" src="https://socialify.git.ci/zeative/pakasir-sdk/image?custom_description=Lightweight+Pakasir+Payment+Gateway+API+Client+Library&custom_language=TypeScript&description=1&font=Inter&language=1&owner=1&pattern=Charlie+Brown&theme=Auto">
+<table>
+<tr>
+<td>
 
-  <h1 align="center">Pakasir SDK - Lightweight Pakasir Payment Gateway API Client Library</h1>
+# Pakasir Payment Gateway
 
-<a href="https://www.npmjs.com/package/pakasir-sdk"><img src="https://img.shields.io/npm/v/pakasir-sdk.svg" alt="NPM Version"></a>
-<a href="https://www.npmjs.com/package/pakasir-sdk"><img src="https://img.shields.io/npm/dw/pakasir-sdk?label=npm&color=%23CB3837" alt="NPM Downloads"></a>
-<a href="https://github.com/zeative/pakasir-sdk/releases"><img src="https://img.shields.io/npm/dt/pakasir-sdk" alt="NPM Downloads"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/languages/code-size/zeative/pakasir-sdk" alt="GitHub Code Size"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/issues/zeative/pakasir-sdk" alt="GitHub Issues"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/issues-closed/zeative/pakasir-sdk" alt="GitHub Closed Issues"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/badge/TypeScript-5.0%2B-blue?style=flat-square&logo=typescript" alt="TypeScript"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/license/zeative/pakasir-sdk" alt="GitHub License"></a>
-<a href="https://discord.gg/SfnWWYUe"><img alt="Discord" src="https://img.shields.io/discord/1105833273415962654?logo=discord&label=discord&link=https%3A%2F%2Fgithub.com%2Fzeative%2Fpakasir-sdk"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/stars/zeative/pakasir-sdk" alt="GitHub Stars"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/forks/zeative/pakasir-sdk" alt="GitHub Forks"></a>
-<a href="https://github.com/zeative/pakasir-sdk"><img src="https://img.shields.io/github/watchers/zeative/pakasir-sdk" alt="GitHub Watchers"></a>
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/zeative/pakasir-sdk)
+SDK TypeScript ringan untuk integrasi pembayaran digital Indonesia [pakasir.com](https://pakasir.com).
+Dukung QRIS, Virtual Account multi-bank & PayPal dalam hitungan menit.
 
-</div>
+<a href="https://www.npmjs.com/package/zaflow"><img src="https://img.shields.io/npm/v/zaflow.svg" alt="NPM Version"></a>
+<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/github/languages/code-size/zeative/zaflow" alt="GitHub Code Size"></a>
+<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/badge/TypeScript-5.0%2B-blue?style=flat-square&logo=typescript" alt="TypeScript"></a>
+<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/github/license/zeative/zaflow" alt="GitHub License"></a>
+<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/github/stars/zeative/zaflow" alt="GitHub Stars"></a>
+<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/github/forks/zeative/zaflow" alt="GitHub Forks"></a>
+<a href="https://github.com/zeative/zaflow"><img src="https://img.shields.io/github/watchers/zeative/zaflow" alt="GitHub Watchers"></a>
 
-<div align="center">
-  <p>
-    dummy description
-  </p>
-</div>
+[Installation](#-installation) •
+[Quick Start](#-quick-start) •
+[Payment Methods](#-payment-methods) •
+[API Reference](#-api-reference)
 
-<br>
+</td>
+<td>
+<img src="media/pakasir-clear.png" width="200" alt="Pakasir Logo"/>
+</td>
+</tr>
+</table>
 
-<div align="center">
+---
 
-[🚀 Overview](#-overview) &nbsp;&nbsp;•&nbsp;&nbsp;
-[🤝 Contributing](#-contributing)
+## 💳 Payment Methods
 
-<br>
-<a href="https://discord.gg/SfnWWYUe"><img alt="Discord" src="https://discord.com/api/guilds/1105833273415962654/widget.png?style=banner2"></a>
-</div>
-
-<br>
+| Method         | Code             | Fee              |
+| -------------- | ---------------- | ---------------- |
+| All Methods    | `all`            | Varies           |
+| QRIS           | `qris`           | 0.7% - 1%        |
+| PayPal         | `paypal`         | 1% (min Rp3.000) |
+| BNI VA         | `bni_va`         | Rp3.500          |
+| BRI VA         | `bri_va`         | Rp3.500          |
+| CIMB Niaga VA  | `cimb_niaga_va`  | Rp3.500          |
+| Maybank VA     | `maybank_va`     | Rp3.500          |
+| Permata VA     | `permata_va`     | Rp3.500          |
+| BNC VA         | `bnc_va`         | Rp3.500          |
+| ATM Bersama VA | `atm_bersama_va` | Rp3.500          |
+| Sampoerna VA   | `sampoerna_va`   | Rp2.000          |
+| Artha Graha VA | `artha_graha_va` | Rp2.000          |
 
 ---
 
@@ -52,7 +60,7 @@ Contributions are welcome! Please follow these steps:
 
 ## 🎯 Issues & Feedback
 
-**If you encounter any problems or have feature requests, please open an [issue](https://github.com/zeative/pakasir-sdk/issues)**
+**If you encounter any problems or have feature requests, please open an [issue](https://github.com/zeative/zaflow/issues)**
 
 - [Buy me coffee ☕](https://saweria.co/zaadevofc)
 - [Ko-Fi](https://ko-fi.com/zaadevofc)
@@ -61,4 +69,4 @@ Contributions are welcome! Please follow these steps:
 
 ## 📜 License
 
-Distributed under the **MIT License**. See [`LICENSE`](https://github.com/zeative/pakasir-sdk/blob/main/LICENSE) for details.
+Distributed under the **MIT License**. See [`LICENSE`](https://github.com/zeative/zaflow/blob/main/LICENSE) for details.
