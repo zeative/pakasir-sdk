@@ -1,7 +1,7 @@
 {
   "name": "pakasir-sdk",
-  "description": "Pakasir SDK - Lightweight Pakasir Payment Gateway API Client Library",
-  "version": "1.0.5",
+  "description": "Pakasir SDK - Lightweight Pakasir Payment Gateway API v2 Client Library",
+  "version": "2.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -13,14 +13,21 @@
       "import": "./dist/index.mjs"
     }
   },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "author": "zaadevofc",
   "repository": {
     "url": "git+https://github.com/zeative/pakasir-sdk.git"
   },
-  "homepage": "https://pakasir.com/p/docs",
+  "homepage": "https://pakasir.com/p/get-started",
   "scripts": {
-    "test": "bun run examples/test.ts",
-    "build": "tsup",
+    "test": "bun test __tests__",
+    "typecheck": "tsc --noEmit -p tsconfig.test.json",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean --target node20",
     "r:patch": "npm run build && npm version patch && npm publish",
     "r:minor": "npm run build && npm version minor && npm publish",
     "r:major": "npm run build && npm version major && npm publish"
@@ -32,6 +39,7 @@
     "sdk"
   ],
   "devDependencies": {
+    "@types/bun": "^1.4.2",
     "@types/node": "^25.0.0",
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
